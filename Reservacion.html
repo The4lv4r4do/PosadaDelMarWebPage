@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación</title>
+</head>
+<body>
+    <header>Reserva aquí</header>
+    <article>
+        <h2>Por favor rellene el siguiente formulario:</h2>
+        <form action="Reservacion.html" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" required>
+            <br>
+            <label for="fecha">Fecha de llegada:</label>
+            <input type="date" name="fechaLlegada" id="fechaLlegada" required>
+            <br>
+            <label for="fecha">Fecha de regreso:</label>
+            <input type="date" name="fechaRegreso" id="fechaRegreso" required>
+            <br>
+            <label for="habitacion">Tipo de habitación:</label>
+            <select name="habitacion" id="habitacion" required>
+                <option value="Sencilla">Sencilla</option>
+                <option value="Doble">Doble</option>
+                <option value="Triple">Triple</option>
+                <option value="Doble con A/C">Doble con A/C</option>
+                <option value="Doble con ventilador">Doble con ventilador</option>
+            </select>
+            <br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset">
+        </form>
+    </article>
+</body>
+</html>
